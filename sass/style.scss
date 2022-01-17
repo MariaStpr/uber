@@ -1,0 +1,25 @@
+@import "base/variables";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+@import "blocks/header";
+@import "blocks/button";
+@import "blocks/promo";
+@import "blocks/title";
+@import "blocks/icon";
+@import "blocks/community";
+@import "blocks/work";
+@import "blocks/customer";
+@import "blocks/singup";
+@import "blocks/footer";
+
+@import "base/media";

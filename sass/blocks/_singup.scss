@@ -1,0 +1,90 @@
+.singup {
+    min-height: 514px;
+    padding: 0 0 140px 0;
+    background-color: $bg_color;
+    &__wrapper {
+        padding: 0 15px;
+        width: 100%;
+        min-height: 364px;
+        background: #FFFFFF;
+        box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.03);
+        border-radius: 10px;
+        margin: 0 auto;
+    }
+    &__form {
+        padding: 76px 0;
+        width: 626px;
+        margin: 0 auto;
+    }
+    &__desc {
+        font-family: Poppins;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 150%;
+        text-align: center;
+        color: #000000;
+        opacity: 0.7;
+        margin-top: 15px;
+    }
+    form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 526px;
+        height: 54px;
+        border: 1px solid rgba(45, 116, 255, 0.2);
+        border-radius: 5px;
+        margin: 0 auto;
+        margin-top: 25px;
+    }
+    &__email {
+        width: 403px;
+        height: 52px;
+        border: none;
+        padding: 15px 0 15px 30px;
+    }
+}
+
+@media (max-width: 992px) {
+    .singup {
+        &__wrapper {
+            width: 90%;
+        }
+    }    
+}
+
+@media (max-width: 768px) {
+    .singup {
+        padding: 0 0 90px 0;
+        &__form {
+            width: 80%;
+        }
+        form {
+            width: 80%;
+        }
+        &__email {
+            padding: 15px 0 15px 15px;
+        }
+    }    
+}
+
+@media (max-width: 576px) {
+    .singup {
+        
+        &__desc {
+            font-size: 16px;
+        }
+        form {
+            flex-direction: column;
+            border: none;
+            margin: 15px 0 0 0;
+            width: 100%;
+            height: 130px;
+        }
+        &__email {
+            width: 100%;
+            border: 1px solid rgba(45, 116, 255, 0.2);
+        }
+
+    }    
+}
